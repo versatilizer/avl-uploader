@@ -12,3 +12,10 @@ A tool to pull videos from avloops.com and submit to youtube
 2. when running the first script it will go through the csv file and download video files from the avloops.com according to the list
 3. it will check if the file was already uploaded to Youtube (by checking if upload_time column is empty)
 4. when finished or upon error - run the second part of the script from the notebook to save the log file for analysis and retry
+
+## details on how it works
+
+The script has three files:
+- `client_secrets.json` for credentials for YouTube API
+- `Google.py` does the uploading part
+- `avl-easy-uploader.ipynb` UI through which a user connects the csv file, initiates/restarts the process, saves the log into file
